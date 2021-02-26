@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>privacy policy</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"/>
+        <link rel="icon" href="../assets/favicon.ico"/> 
+
+        <script src="../components/header.js" type="text/javascript" defer></script>
+        <script src="../components/footer.js" type="text/javascript" defer></script>
+        <script src="../components/rounded.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        <main>
+            <section class="content">
+                <header-component></header-component>
+                <section class="hero privacy">
+                    <div class="item">
+                        <div class="text">
+                            <h1 class="worry"> no worries </h1>
+                            <p> We don't colllect your data... and that's it. That's our policy. Privacy matters.
+                                <br>
+                                <a href="..">back home</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <footer-component></footer-component>
+            </section>
+        </main>
+
+        <rounded-corners></rounded-corners>
+    </body>
+    <script>
+        let random = ["don't worry!", "<i>worriless</i>", "no worries :)"]
+        document.querySelector(".worry").innerHTML = random[Math.floor(Math.random()*random.length)];
+    </script>
+</html>

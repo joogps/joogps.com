@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>joao</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+        <link rel="icon" href="assets/favicon.ico"/>
+
+        <script src="components/header.js" type="text/javascript" defer></script>
+        <script src="components/footer.js" type="text/javascript" defer></script>
+        <script src="components/rounded.js" type="text/javascript" defer></script>
+
+        <style>
+            .footer-home {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header-component></header-component>
+
+            <section class="content">
+                <section class="hero">
+                    <div class="item">
+                        <div class="text">
+                            <h1 class="hi"> hi!! </h1>
+                            <p> Welcome to... <i>this</i>. I'm João Gabriel, a developer based in Brazil, currently learning about iOS development and how to be a nicer human. Here you'll find anything you need, from my products and projects to my social links. Feel free to explore! 
+                                <br>
+                                <a href="about">about</a>
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img src="assets/IMG_3371.jpeg">
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="subviews">
+                    <div class="item subview-1">
+                        <p> A new app to help you rethink your soda-drinking habits.
+                            <br>
+                            <a href="https://testflight.apple.com/join/xTUOBzb1">start testing</a>
+                        </p>
+                    </div>
+
+                    <div class="item subview-2">
+                        <img width="300px" height="300px" src="https://developer.apple.com/wwdc20/swift-student-challenge/images/swift-large_2x.png">
+                        <h2>  WWDC20 <br> Swift Student Challenge </h2>
+                        <p> I sorta won this thing last year.
+                            <br>
+                            <a href="https://github.com/joogps/WWDC-2020">more info</a>
+                        </p>
+                    </div>
+                </section>
+
+                <footer-component></footer-component>
+            </section>
+        </main>
+
+        <rounded-corners></rounded-corners>
+    </body>
+    <script>
+        let random = ["hi!!", "heyo :)", "hi there!", "hey!", "ahoy!"]
+        document.querySelector(".hi").innerHTML = random[Math.floor(Math.random()*random.length)];
+    </script>
+</html>
