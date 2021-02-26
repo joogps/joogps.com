@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
 
-        <title>privacy policy</title>
+        <title>404</title>
         <link rel="stylesheet" type="text/css" href="../style.css">
 
         <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg"/>
@@ -13,12 +13,9 @@
         <script src="../components/rounded.js" type="text/javascript" defer></script>
 
         <style>
-            .privacy > .item {
-                background-image: linear-gradient(130deg, #ff0000, #ff0082, #9000ff, #ff0082, #ff0000, #ff0082, #9000ff), url("https://source.unsplash.com/collection/79129294/");
-            }
-
-            .footer-privacy-policy {
-                opacity: 1;
+            .error > .item {
+                background-image: linear-gradient(130deg, #674040, #B38686, #674040, #B38686), url("https://source.unsplash.com/collection/79129294/");
+                filter: grayscale(80%);
             }
         </style>
     </head>
@@ -26,11 +23,11 @@
         <main>
             <section class="content">
                 <header-component></header-component>
-                <section class="hero privacy">
+                <section class="hero error">
                     <div class="item">
                         <div class="text">
-                            <h1 class="worry"> no worries </h1>
-                            <p> We don't colllect your data... and that's it. That's our policy. Privacy matters.
+                            <h1 class="_404"> 404 </h1>
+                            <p> You landed at a wrong page. Yeah, it's a 404. Check the URL. Drink water. Beep bop.
                                 <br>
                                 <a href="/">back home</a>
                             </p>
@@ -44,7 +41,7 @@
         <rounded-corners></rounded-corners>
     </body>
     <script>
-        let random = ["don't worry!", "<i>worriless</i>", "no worries :)"]
-        document.querySelector(".worry").innerHTML = random[Math.floor(Math.random()*random.length)];
+        let random = ["404", "<i>4-oh-4</i>", "there ain't a thing here", "*tumbleweed sounds*", "pretty empty here"]
+        document.querySelector("._404").innerHTML = random[Math.floor(Math.random()*random.length)];
     </script>
 </html>
