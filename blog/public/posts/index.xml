@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on blog</title>
+    <link>http://joogps.me/blog/posts/</link>
+    <description>Recent content in Posts on blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 08:47:11 +0100</lastBuildDate><atom:link href="http://joogps.me/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Post</title>
+      <link>http://joogps.me/blog/posts/post-1/</link>
+      <pubDate>Tue, 26 Mar 2019 08:47:11 +0100</pubDate>
+      
+      <guid>http://joogps.me/blog/posts/post-1/</guid>
+      <description>ablablubleble</description>
+    </item>
+    
+  </channel>
+</rss>

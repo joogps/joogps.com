@@ -94,8 +94,6 @@ class Header extends HTMLElement {
             }
             
             .social {
-                max-height: 75px;
-            
                 align-self: center;
             
                 box-sizing: content-box;
@@ -109,18 +107,15 @@ class Header extends HTMLElement {
                 transition: .2s;
             }
             
-            .collapsed .social {
-                max-height: 40px;
-            }
-            
             .social img {
-                height: 60%;
+                height: 42px;
                 margin: 8px;
             
                 transition: .2s;
             }
             
             .collapsed .social img {
+                height: 24px;
                 margin: 4px;
             }
             
@@ -139,19 +134,19 @@ class Header extends HTMLElement {
 
             <div class="social">
                 <a href="https://github.com/joogps">
-                    <img src="../assets/social/github.svg">
+                    <img src="/assets/social/github.svg">
                 </a>
 
                 <a href="https://twitter.com/joogps">
-                    <img src="../assets/social/twitter.svg">
+                    <img src="/assets/social/twitter.svg">
                 </a>
 
                 <a href="https://www.youtube.com/channel/UCoI_nPpWO2sY8wVViyOmAIA/">
-                    <img src="../assets/social/youtube.svg">
+                    <img src="/assets/social/youtube.svg">
                 </a>
 
                 <a href="https://www.instagram.com/joogps/">
-                    <img src="../assets/social/instagram.svg">
+                    <img src="/assets/social/instagram.svg">
                 </a>
             </div>
         </header>

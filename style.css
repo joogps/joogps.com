@@ -47,21 +47,6 @@ h1 {
     font-size: 3.5em;
     letter-spacing: -0.08em;
     font-weight: bold;
-
-    transform: scaleX(1.15);
-    transform-origin: left;
-
-    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.75) 35%, black 75%);
-    mask-image: linear-gradient(to bottom,  rgb(0, 0, 0, 0.75) 35%, black 75%);
-
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, .45);
-
-    transition: .2s;
-}
-
-h1:hover {
-    transform: scaleX(1.5);
-    transition: .15s;
 }
 
 h1:active {
@@ -172,6 +157,23 @@ main {
     animation: gradient 10s linear infinite;
 
     background-blend-mode: multiply;
+}
+
+.hero h1 {
+    transform: scaleX(1.15);
+    transform-origin: left;
+
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.75) 35%, black 75%);
+    mask-image: linear-gradient(to bottom,  rgb(0, 0, 0, 0.75) 35%, black 75%);
+
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, .45);
+
+    transition: .2s;
+}
+
+.hero h1:hover {
+    transform: scaleX(1.5);
+    transition: .15s;
 }
 
 .hero .image {
