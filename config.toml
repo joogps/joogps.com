@@ -1,0 +1,11 @@
+baseURL = "http://joogps.me/blog/"
+languageCode = "en-us"
+title = "blog"
+
+archetypeDir = "blog/archetypes"
+contentDir = "blog/content"
+data = "blog/data"
+layoutDir = "blog/layouts"
+resourcesDir = "blog/resources"
+staticDir = "blog/static"
+themesDir = "blog/themes"
