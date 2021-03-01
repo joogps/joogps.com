@@ -7,7 +7,7 @@ class Footer extends HTMLElement {
 
         this.innerHTML = `
         <style>
-            footer {
+            .page-footer {
                 width: 100vw;
                 position: absolute;
                 bottom: 0px;
@@ -27,25 +27,25 @@ class Footer extends HTMLElement {
             }
 
             @media (prefers-color-scheme: dark) {
-                footer {
+                .page-footer {
                     background-color: white;
                 }
 
-                footer * {
+                .page-footer * {
                     color: black;
                 }
             }
             
-            footer a {
+            .page-footer a {
                 margin: 0 10px;
                 opacity: 0.65;
             }
             
-            footer p {
+            .page-footer p {
                 font-size: 0.8em;
             }
         </style>
-        <footer>
+        <footer class="page-footer">
             <section>
                 <a class="footer-home" href="/"> home </a>
                 <a class="footer-blog" href="/blog"> blog </a>

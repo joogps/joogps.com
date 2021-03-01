@@ -1,0 +1,5 @@
+<div class="grid">
+	{{ range (where .Site.AllPages "Type" "in" .Site.Params.mainSections) }}
+	<div class="item"><a href="{{ .RelPermalink }}">{{ .Title }}</a></div>
+	{{ end }}
+</div>

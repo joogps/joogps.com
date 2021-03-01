@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://joogps.me/blog/blog/</loc>
+  </url><url>
     <loc>http://joogps.me/blog/</loc>
-    <lastmod>2019-03-26T08:47:11+01:00</lastmod>
   </url><url>
-    <loc>http://joogps.me/blog/posts/post-1/</loc>
-    <lastmod>2019-03-26T08:47:11+01:00</lastmod>
+    <loc>http://joogps.me/blog/hugo/archetypes/</loc>
   </url><url>
-    <loc>http://joogps.me/blog/posts/</loc>
-    <lastmod>2019-03-26T08:47:11+01:00</lastmod>
+    <loc>http://joogps.me/blog/hugo/content/</loc>
   </url><url>
-    <loc>http://joogps.me/blog/categories/</loc>
+    <loc>http://joogps.me/blog/hugo/data/</loc>
+  </url><url>
+    <loc>http://joogps.me/blog/hugo/layouts/</loc>
+  </url><url>
+    <loc>http://joogps.me/blog/hugo/resources/</loc>
+  </url><url>
+    <loc>http://joogps.me/blog/hugo/static/</loc>
+  </url><url>
+    <loc>http://joogps.me/blog/hugo/themes/</loc>
   </url><url>
     <loc>http://joogps.me/blog/tags/</loc>
   </url>

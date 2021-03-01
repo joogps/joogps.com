@@ -2,10 +2,16 @@ baseURL = "http://joogps.me/blog/"
 languageCode = "en-us"
 title = "blog"
 
-archetypeDir = "blog/archetypes"
-contentDir = "blog/content"
-data = "blog/data"
-layoutDir = "blog/layouts"
-resourcesDir = "blog/resources"
-staticDir = "blog/static"
-themesDir = "blog/themes"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+archetypeDir = "hugo/archetypes"
+contentDir = "hugo/content"
+data = "hugo/data"
+layoutDir = "hugo/layouts"
+resourcesDir = "hugo/resources"
+staticDir = "hugo/static"
+themesDir = "hugo/themes"
+
+publishDir = "blog"
+
+disqusShortname = "blog-ggfatrncjb"

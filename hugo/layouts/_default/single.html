@@ -1,0 +1,22 @@
+{{ define "main" }}
+	<div class="single">
+		<section class="hero">
+			<div class="item">
+				<h1> blog </h1>
+			</div>
+		</section>
+		<div class="item article">
+			<article>
+				<header>
+					<h1 class="title">{{ .Title }}</h1>
+					<time>{{ .Date.Format "jan 2, 2006" }} &nbsp;•&nbsp; {{ .ReadingTime }} min</time>
+				</header>
+				<hr>
+				{{ .Content }}
+			</article>
+			<hr>
+			<h2>comments</h2>
+			{{ template "_internal/disqus.html" . }}
+		</div>
+	</div>
+{{ end }}

@@ -16,7 +16,7 @@ class Header extends HTMLElement {
 
         this.innerHTML = `
         <style>
-            header {
+            .page-header {
                 width: 100%;
             
                 padding: 32px 50px;
@@ -127,7 +127,7 @@ class Header extends HTMLElement {
                 text-decoration: none;
             }
         </style>
-        <header>
+        <header class="page-header">
             <a href="https://joogps.me">
                 ${logo} 
             </a>

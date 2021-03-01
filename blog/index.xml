@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog</title>
+    <link>http://joogps.me/blog/</link>
+    <description>Recent content on blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://joogps.me/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>welcome!!</title>
+      <link>http://joogps.me/blog/new-website/</link>
+      <pubDate>Fri, 28 Feb 2020 08:47:11 +0100</pubDate>
+      
+      <guid>http://joogps.me/blog/new-website/</guid>
+      <description>Hey there. Hope you&amp;rsquo;re doing good. Welcome to my new website! I decided to build this place so that I could have somewhere to express myself and showcase my stuff, without any of the problems and challenges of social media and the world. Not only I now have a beautiful new homepage, I also have this blog to write not only about tech and software development, but also (and mostly, probably) about personal, regular life-related topics.</description>
+    </item>
+    
+  </channel>
+</rss>

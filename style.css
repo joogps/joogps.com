@@ -8,6 +8,8 @@
 
     color: white;
     font-family: "Inter", "Helvetica Neue", "Helvetica", sans-serif;
+    
+    letter-spacing: -0.075em;
 }
 
 html {
@@ -45,31 +47,22 @@ body {
 
 h1 {
     font-size: 3.5em;
-    letter-spacing: -0.08em;
     font-weight: bold;
-}
 
-h1:active {
-    transform: scaleX(0.9);
-    transition: .15s;
-}
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.75) 35%, black 75%);
+    mask-image: linear-gradient(to bottom,  rgb(0, 0, 0, 0.75) 35%, black 75%);
 
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, .45);
+}
 
 h2 {
     font-size: 1.8em;
     line-height: 1em;
-    letter-spacing: -0.075em;
-    font-weight: bold;
-}
-
-h2 {
-    letter-spacing: -0.085em;
     font-weight: bold;
 }
 
 p {
     font-size: 1em;
-    letter-spacing: -0.08em;
     line-height: 1.1em;
     display: inline-block;
 
@@ -79,7 +72,6 @@ p {
 a {
     font-weight: bold;
     line-height: 2em;
-    letter-spacing: -0.08em;
     text-decoration: none;
 }
 
@@ -99,8 +91,6 @@ p a::after {
     }
 }
 
-/* Main content */
-
 main {
     width: 100vw;
 
@@ -118,8 +108,8 @@ main {
     min-height: 100vh;
 
     background-color: white;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 155px;
+    padding-bottom: 120px;
 
     position: relative;
 }
@@ -130,6 +120,8 @@ main {
     }
 }
 
+/* Content style */
+
 .item {
     border-radius: 50px;
 
@@ -138,13 +130,11 @@ main {
 
     padding: 8vw;
 
-    margin: 12px;
-
     box-shadow: 0px 5px 12px -8px rgba(0,0,0,0.35);
 }
 
-.hero {
-    margin: 15px;
+.hero, .subviews, .item {
+    margin: 12px;
 }
 
 .hero > .item {
@@ -163,16 +153,16 @@ main {
     transform: scaleX(1.15);
     transform-origin: left;
 
-    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.75) 35%, black 75%);
-    mask-image: linear-gradient(to bottom,  rgb(0, 0, 0, 0.75) 35%, black 75%);
-
-    text-shadow: 1px 1px 4px rgba(255, 255, 255, .45);
-
     transition: .2s;
 }
 
 .hero h1:hover {
     transform: scaleX(1.5);
+    transition: .15s;
+}
+
+.hero h1:active {
+    transform: scaleX(0.9);
     transition: .15s;
 }
 
@@ -195,8 +185,6 @@ main {
 }
 
 .subviews {
-    margin: 15px;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
