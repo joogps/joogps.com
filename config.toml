@@ -2,8 +2,6 @@ baseURL = "http://joogps.me/blog/"
 languageCode = "en-us"
 title = "blog"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
-
 archetypeDir = "hugo/archetypes"
 contentDir = "hugo/content"
 data = "hugo/data"
@@ -14,4 +12,7 @@ themesDir = "hugo/themes"
 
 publishDir = "blog"
 
-disqusShortname = "blog-ggfatrncjb"
+[taxonomies]
+  tag = "tags"
+
+# disqusShortname = "blog-ggfatrncjb"
