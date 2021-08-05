@@ -8,7 +8,7 @@ class Header extends HTMLElement {
             <svg class="logo" viewBox="0 0 177 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <title>logo</title>
                 <g id="joao" fill="#000000" fill-rule="nonzero">
-                    <text id="joao" font-size="96.0496595" letter-spacing="-8" fill="#000000">
+                    <text font-size="96.0496595" letter-spacing="-8" fill="#000000">
                         <tspan x="2.45483258" y="73.8494326">joao</tspan>
                     </text>
                     <text id="joogps.codes" font-size="15" letter-spacing="-1.5771" fill="#000000">
