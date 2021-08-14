@@ -195,7 +195,7 @@ main {
     flex-grow: 1;
     width: 100px;
 
-    background-image: url("assets/noSoda.png"), linear-gradient(130deg, white, rgb(200, 200, 200));
+    background-image: url("assets/Magic.png"), linear-gradient(130deg, white, rgb(200, 200, 200));
     background-position: center 250px, center;
     background-size: 75%, auto;
     background-repeat: no-repeat;
