@@ -203,24 +203,10 @@ main {
     min-height: 800px;
 
     text-align: center;
-
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-	0% {
-		background-position: center 250px, center;
-	}
-	50% {
-		background-position: center 275px, center;
-	}
-	100% {
-		background-position: center 250px, center;
-	}
 }
 
 .subview-1 p {
-    background: linear-gradient(130deg, #00D0FF, #0050FF);
+    background: linear-gradient(90, #4F4F4F, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
