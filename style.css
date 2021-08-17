@@ -171,7 +171,7 @@ main {
 }
 
 .hero .image img {
-    width: 50%;
+    width: 55%;
     clip-path: circle();
 }
 
@@ -195,9 +195,11 @@ main {
     flex-grow: 1;
     width: 100px;
 
-    background-image: url("assets/Magic.png"), linear-gradient(130deg, white, rgb(200, 200, 200));
-    background-position: center 250px, center;
-    background-size: 75%, auto;
+    padding-top: 300px;
+
+    background-image: url("assets/Magic.png");
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
     min-height: 800px;
@@ -206,7 +208,7 @@ main {
 }
 
 .subview-1 p {
-    background: linear-gradient(90, #4F4F4F, #000000);
+    background: linear-gradient(#4F4F4F, #000000);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -219,7 +221,12 @@ main {
     flex-grow: 1;
     max-width: 100%;
 
-    background: linear-gradient(130deg, rgb(10, 10, 10), rgb(80, 80, 80));
+    background-image: url("assets/WWDC Swift Student Challenge.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 800px;
 
     display: flex;
     flex-direction: column;
