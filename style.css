@@ -195,7 +195,7 @@ main {
     flex-grow: 1;
     width: 100px;
 
-    padding-top: 300px;
+    padding-top: 225px;
 
     background-image: url("assets/Magic.png");
     background-position: center;
@@ -214,6 +214,10 @@ main {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+}
+
+.subview-1 #product-hunt::after {
+    content: none;
 }
 
 .subview-2 {
