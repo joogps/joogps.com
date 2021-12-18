@@ -17,9 +17,7 @@ class Footer extends HTMLElement {
                 display: flex;
                 justify-content: space-between;
             
-                border-radius: 25px 25px 0 0;
-            
-                letter-spacing: -0.08em;
+                border-radius: 28px 28px 0 0;
             
                 background-color: rgba(0, 0, 0, 0.9);
 
@@ -42,7 +40,7 @@ class Footer extends HTMLElement {
             }
             
             .page-footer p {
-                font-size: 0.8em;
+                font-size: 1em; !important
             }
         </style>
         <footer class="page-footer">

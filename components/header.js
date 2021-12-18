@@ -31,12 +31,13 @@ class Header extends HTMLElement {
                 display: flex;
                 justify-content: space-between;
             
-                backdrop-filter: blur(20px) brightness(140%);
-                -webkit-backdrop-filter: blur(20px) brightness(140%);
+                backdrop-filter: blur(20px) brightness(120%);
+                -webkit-backdrop-filter: blur(20px) brightness(120%);
+                background-color: rgba(255, 255, 255, 0.25);
             
                 box-shadow: 0px 5px 12px -8px rgba(0,0,0,0.75);
             
-                border-radius: 0px 0px 25px 25px;
+                border-radius: 0px 0px 28px 28px;
 
                 z-index: 1;
             
@@ -64,6 +65,12 @@ class Header extends HTMLElement {
             @media (prefers-color-scheme: dark) {
                 body {
                     background-color: black;
+                }
+
+                .page-header {
+                    backdrop-filter: blur(20px) brightness(80%);
+                -webkit-backdrop-filter: blur(20px) brightness(80%);
+                background-color: rgba(0, 0, 0, 0.25);
                 }
             
                 #joao {
@@ -132,8 +139,8 @@ class Header extends HTMLElement {
             }
         </style>
         <header class="page-header">
-            <a href="https://joogps.me">
-                ${logo} 
+            <a href="https://joogps.joogps">
+                ${logo}
             </a>
 
             <div class="social">
