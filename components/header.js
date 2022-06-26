@@ -139,7 +139,7 @@ class Header extends HTMLElement {
             }
         </style>
         <header class="page-header">
-            <a href="https://joogps.joogps">
+            <a href="https://joogps.com">
                 ${logo}
             </a>
 
