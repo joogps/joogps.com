@@ -12,7 +12,7 @@ class Header extends HTMLElement {
                         <tspan x="2.45483258" y="73.8494326">joao</tspan>
                     </text>
                     <text id="joogps.com" font-size="15" letter-spacing="-1.5771">
-                        <tspan x="27.4563656" y="87.873085">joogps.codes</tspan>
+                        <tspan x="27.4563656" y="87.873085">joogps.com</tspan>
                     </text>
                 </g>
             </svg>
@@ -96,11 +96,11 @@ class Header extends HTMLElement {
                 height: 50px;
             }
             
-            #joogps\\.codes {
+            #joogps\\.com {
                 transition: .3s;
             }
             
-            .collapsed #joogps\\.codes {
+            .collapsed #joogps\\.com {
                 opacity: 0;
             }
             
