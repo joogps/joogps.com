@@ -37,7 +37,7 @@ class Header extends HTMLElement {
             
                 box-shadow: 0px 5px 12px -8px rgba(0,0,0,0.75);
             
-                border-radius: 0px 0px 28px 28px;
+                border-radius: 0px 0px 24px 24px;
 
                 z-index: 1;
             

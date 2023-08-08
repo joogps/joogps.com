@@ -4,6 +4,7 @@ class Footer extends HTMLElement {
     }
 
     connectedCallback() {
+        let year = new Date().getFullYear();
 
         this.innerHTML = `
         <style>
@@ -17,7 +18,7 @@ class Footer extends HTMLElement {
                 display: flex;
                 justify-content: space-between;
             
-                border-radius: 28px 28px 0 0;
+                border-radius: 24px 24px 0 0;
             
                 background-color: rgba(0, 0, 0, 0.9);
 
@@ -49,7 +50,7 @@ class Footer extends HTMLElement {
                 <a class="footer-blog" href="/blog"> blog </a>
                 <a class="footer-privacy-policy" href="/privacy-policy"> privacy policy </a>
             </section>
-            <p> 2021 © João Gabriel </p>
+            <p> ${year} © João Gabriel </p>
         </footer>
         `;
     }

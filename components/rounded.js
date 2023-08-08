@@ -7,8 +7,8 @@ class Rounded extends HTMLElement {
       this.innerHTML = `
         <style>
             .rounded {
-                width: 25px;
-                height: 25px;
+                width: 24px;
+                height: 24px;
             
                 z-index: 1;
                 position: fixed;
@@ -23,7 +23,7 @@ class Rounded extends HTMLElement {
 
     roundedSVG(style) {
       return `
-      <svg class="rounded" style="${style}" width="25px" height="25px" viewBox="0 0 178 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <svg class="rounded" style="${style}" width="16px" height="16px" viewBox="0 0 178 178" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <title>rounded</title>
           <g class="rounded" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <path d="M178,0 C80.6763814,0 1.59572763,78.1074176 0.0238469144,175.056445 L0,178 L0,0 L178,0 Z" id="Path" fill="#000000"></path>
