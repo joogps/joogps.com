@@ -34,6 +34,16 @@ body {
   overflow: hidden;
 }
 
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 @media screen and (min-width: 320px) {
     html {
         font-size: calc(16px + 16 * ((100vw - 320px) / 680));
