@@ -1,0 +1,258 @@
+@import url('https://rsms.me/inter/inter.css');
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+    font-family: -apple-system, "Inter", "Helvetica Neue", "Helvetica", sans-serif;
+    
+    letter-spacing: -0.045em;
+}
+
+html {
+    font-size: 16px;
+    position: relative;
+    animation: fadein 0.5s;
+}
+
+@keyframes fadein {
+    from { 
+        top: 100;
+        opacity: 0; 
+    }
+    to   {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+main {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 16 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+
+    -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 0.75) 35%, black 75%);
+    mask-image: linear-gradient(to bottom,  rgb(0, 0, 0, 0.75) 35%, black 75%);
+
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, .45);
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3em;
+    line-height: 1.1em;
+    display: inline-block;
+
+    opacity: 0.85;
+
+    margin: 8px;
+}
+
+a {
+    font-weight: bold;
+    line-height: 2em;
+    text-decoration: none;
+}
+
+p a::after { 
+    content: " →";
+}
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+    .content {
+        background-color: black !important;
+    }
+
+    main {
+        /* background-image: linear-gradient(black 50%, white 50%) !important; */
+    }
+}
+
+main {
+    width: 100vw;
+
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    transition: .2s;
+
+    background-image: linear-gradient(white 50%, rgb(0, 0, 0, 0.9) 50%);
+}
+
+.content {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: white;
+    padding-top: 155px;
+    padding-bottom: 120px;
+
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) and (orientation: portrait) {
+    .content {
+        padding-top: 235px;
+    }
+}
+
+/* Content style */
+
+.item {
+    border-radius: 24px;
+
+    min-width: 450px;
+    width: auto;
+
+    padding: 4vw 8vw;
+
+    box-shadow: 0px 5px 12px -8px rgba(0,0,0,0.35);
+}
+
+.hero, .subviews, .item {
+    margin: 12px;
+}
+
+.hero > .item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    background-image: linear-gradient(130deg, #00ff3c, #00f571, #00d3e9, #00a0ff, #0058ff, #3300ff, #0058ff, #00a0ff, #00d3e9, #00f571, #00ff3c, #00f571, #00d3e9, #00a0ff, #0058ff, #3300ff), url("https://source.unsplash.com/collection/79129294/");
+    background-size: 300%, cover;
+    animation: gradient 10s linear infinite;
+
+    background-blend-mode: multiply;
+}
+
+.hero h1 {
+    transform: scaleX(1.15);
+    transform-origin: left;
+
+    transition: .2s;
+}
+
+.hero h1:hover {
+    transform: scaleX(1.5);
+    transition: .15s;
+}
+
+.hero h1:active {
+    transform: scaleX(0.9);
+    transition: .15s;
+}
+
+.hero .image {
+    text-align: center;
+}
+
+.hero .image img {
+    width: 60%;
+    clip-path: circle();
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%, center;
+	}
+	100% {
+		background-position: 100% 100%, center;
+	}
+}
+
+.subviews {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.subview-1 {
+    flex: 0.5;
+    flex-grow: 1;
+    width: 100px;
+
+    padding-top: 150px;
+
+    background-image: url("images/Magic.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 800px;
+
+    text-align: center;
+}
+
+.subview-1 p {
+    background: linear-gradient(#FFFFFF, #EEEEEE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.subview-1 div {
+    margin: 4px;
+}
+
+.subview-1 #product-hunt::after {
+    content: none;
+}
+
+.subview-2 {
+    flex: 0.5;
+    flex-grow: 1;
+    max-width: 100%;
+
+    background-image: url("images/WWDC Swift Student Challenge.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-height: 800px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
