@@ -1,10 +1,12 @@
 .page-header {
-    width: 100%;
+    width: calc(100% - 28px);
 
-    padding: 32px 50px;
+    padding: 6px 30px;
 
     position: fixed;
-    top: 0;
+    top: -2px;
+
+    margin: 12px;
 
     display: flex;
     justify-content: space-between;
@@ -15,12 +17,24 @@
 
     box-shadow: 0px 5px 12px -8px rgba(0,0,0,0.75);
 
-    border-radius: 0px 0px 24px 24px;
+    border-radius: 16px;
 
     z-index: 1;
 
     transition: .2s;
 }
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: -2px;
+    bottom: 0;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+}
+
 
 @media screen and (max-width: 1000px) and (orientation: portrait) {
     .logo {
@@ -47,8 +61,8 @@
 
     .page-header {
         backdrop-filter: blur(20px) brightness(80%);
-    -webkit-backdrop-filter: blur(20px) brightness(80%);
-    background-color: rgba(0, 0, 0, 0.25);
+        -webkit-backdrop-filter: blur(20px) brightness(80%);
+        background-color: rgba(0, 0, 0, 0.25);
     }
 
     #joao {
@@ -97,8 +111,9 @@
 }
 
 .social img {
-    height: 42px;
+    height: 38px;
     margin: 8px;
+    opacity: 75%;
 
     transition: .2s;
 }

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import hero from '../../images/Hero.jpg';
+import "./style.css";
 
 function Home() {
     return (

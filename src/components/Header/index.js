@@ -11,11 +11,8 @@ function Header() {
     <svg class="logo" viewBox="0 0 177 96" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <title>logo</title>
         <g id="joao" fill="#000000" fill-rule="nonzero">
-            <text font-size="96.0496595" letter-spacing="-8">
+            <text font-size="64" letter-spacing="-8">
                 <tspan x="2.45483258" y="73.8494326">joao</tspan>
-            </text>
-            <text id="joogps.com" font-size="15" letter-spacing="-1.5771">
-                <tspan x="27.4563656" y="87.873085">joogps.com</tspan>
             </text>
         </g>
     </svg>
