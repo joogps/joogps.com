@@ -1,5 +1,3 @@
-import p5 from 'p5';
-
 function sketch(p) {
     var canvas;
     var fraction;
@@ -36,33 +34,28 @@ function sketch(p) {
     p.draw = function() {
         p.blendMode(p.ADD);
 
-        // if (p.mouseIsPressed) {
-        if (true) {
+        if (p.mouseIsPressed) {
             p.background(255, 255, 255, 1);
-
-            p.blendMode(p.BLEND);
-            // get the color from the gradient
-            const color = getColorFromGradient(colors.map(hexToRgb), fraction);
-            p.stroke(color[0], color[1], color[2]);
-
-            var targetX = p.mouseX,
-            targetY = p.mouseY;
-            x += (targetX - x) * easing;
-            y += (targetY - y) * easing;
-
-            p.line(x, y, px, py);
-
-            px = x;
-            py = y;
-
-            fraction += 0.005;
         } else {
-            p.background(255, 255, 255, 2);
-            x = p.mouseX;
-            y = p.mouseY;
-            px = x;
-            py = y;
+            p.background(255, 255, 255, 1);
         }
+
+        p.blendMode(p.BLEND);
+        // get the color from the gradient
+        const color = getColorFromGradient(colors.map(hexToRgb), fraction);
+        p.stroke(color[0], color[1], color[2]);
+
+        var targetX = p.mouseX,
+        targetY = p.mouseY;
+        x += (targetX - x) * easing;
+        y += (targetY - y) * easing;
+
+        p.line(x, y, px, py);
+
+        px = x;
+        py = y;
+
+        fraction += 0.005;
     }
 }
 

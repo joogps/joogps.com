@@ -6,8 +6,6 @@ function Footer() {
 
   const footerStyles = {
     width: '100vw',
-    position: 'relative',
-    bottom: '0px',
     padding: '32px 50px',
     display: 'flex',
     justifyContent: 'space-between',
@@ -28,11 +26,6 @@ function Footer() {
     opacity: 1.00,
     color: 'white',
     textDecoration: 'none',
-  };
-
-  const yearStyles = {
-    fontSize: '1em',
-    color: 'white',
   };
 
   return (

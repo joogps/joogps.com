@@ -5,11 +5,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    color: white;
+    
     font-family: -apple-system, "Inter", "Helvetica Neue", "Helvetica", sans-serif;
     
-    letter-spacing: -0.045em;
+    letter-spacing: -0.025em;
 }
 
 html {
@@ -75,10 +74,6 @@ p {
     font-size: 1.3em;
     line-height: 1.1em;
     display: inline-block;
-
-    opacity: 0.85;
-
-    margin: 8px;
 }
 
 a {
@@ -110,9 +105,6 @@ main {
     overflow-x: hidden;
     overflow-y: scroll;
 
-    transition: .2s;
-
-    background-image: linear-gradient(white 50%, rgb(0, 0, 0, 0.9) 50%);
 }
 
 .content {

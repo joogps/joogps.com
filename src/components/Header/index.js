@@ -19,7 +19,8 @@ function Header() {
   );
 
   return (
-    <header class="page-header">
+    <header class="page-header-container">
+    <div class="page-header">
       <Link to="https://joogps.com">{logo}</Link>
 
       <div class="social">
@@ -48,6 +49,7 @@ function Header() {
           />
         </a>
       </div>
+    </div>
     </header>
   );
 }
