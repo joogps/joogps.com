@@ -9,7 +9,11 @@
     color: white;
     font-family: -apple-system, "Inter", "Helvetica Neue", "Helvetica", sans-serif;
     
-    letter-spacing: -0.045em;
+    letter-spacing: -0.035em;
+}
+
+::selection {
+    background: white;
 }
 
 html {
@@ -66,19 +70,20 @@ h1 {
 }
 
 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     line-height: 1em;
     font-weight: bold;
+    margin: 12px 0px;
 }
 
 p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     line-height: 1.1em;
     display: inline-block;
 
     opacity: 0.85;
 
-    margin: 8px;
+    margin: 12px 0px;
 }
 
 a {
@@ -87,7 +92,7 @@ a {
     text-decoration: none;
 }
 
-p a::after { 
+.arrowButton::after { 
     content: " →";
 }
 
