@@ -4,10 +4,23 @@ import ArrowLink from "@/components/ArrowLink";
 import DuskLogo from "../../../public/Dusk.png";
 import GeorgiaTechLogo from "../../../public/Georgia Tech.png";
 import MagicLogo from "@/components/MagicLogo";
+import SunoLogo from "@/components/SunoLogo";
+import Portrait from "../../../public/portrait.png";
 
 export default function Home() {
   return (
-    <div className="flex flex-col space-y-8 items-start">
+    <div className="flex flex-col items-start">
+      <div className="relative w-24 h-24 mb-3">
+        <Image
+          src={Portrait}
+          alt="João Pozzobon"
+          fill
+          className="rounded-full object-cover"
+        />
+        <div className="absolute inset-0 rounded-full ring-1 ring-inset ring-white mix-blend-overlay pointer-events-none"></div>
+      </div>
+
+      <div className="flex flex-col space-y-8 items-start">
       <p>
         <span className="">
           hey. my name is{" "}
@@ -27,6 +40,15 @@ export default function Home() {
             className="text-[rgb(106,94,52)] dark:text-[rgb(206,194,152)]"
           >
             Georgia Tech
+          </ArrowLink>
+        </span>
+        , currently interning at{" "}
+        <span className="whitespace-nowrap">
+          <ArrowLink
+            href="https://suno.com"
+            className="inline-flex items-baseline"
+          >
+            <SunoLogo size="64px" className="inline-block fill-current" />
           </ArrowLink>
         </span>
         .
@@ -106,6 +128,7 @@ export default function Home() {
         , or email me at{" "}
         <ArrowLink href="mailto:hi@joogps.com">hi@joogps.com</ArrowLink>
       </p>
+      </div>
     </div>
   );
 }
