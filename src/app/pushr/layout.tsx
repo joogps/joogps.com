@@ -6,26 +6,26 @@ import MeshGradient from "@/components/MeshGradient";
 import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "../../../public/push/logo.png";
+import Logo from "../../../public/pushr/logo.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
-import Preview from "../../../public/push/preview.png";
-import Favicon from "../../../public/push/favicon.ico";
+import Preview from "../../../public/pushr/preview.png";
+import Favicon from "../../../public/pushr/favicon.ico";
 
 export const metadata: Metadata = {
-  title: "push-up tracker — download the push app",
+  title: "push-up tracker — download the pushr app",
   description: "count your push-ups with your iPhone camera",
   other: {
     "apple-itunes-app": "app-id=1587610077",
-    "apple-mobile-web-app-title": "push",
+    "apple-mobile-web-app-title": "pushr",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "black",
     "theme-color": "#000000",
-    "og:image": "https://push.joogps.com" + Preview.src,
+    "og:image": "https://pushr.joogps.com" + Preview.src,
   },
   icons: {
-    icon: "https://push.joogps.com" + Favicon.src,
+    icon: "https://pushr.joogps.com" + Favicon.src,
   },
 };
 
@@ -45,7 +45,7 @@ export default function RootLayout({
           <div className="fixed w-dvw h-dvh bg-black -z-20"></div>
 
           <div className="pt-8 w-full min-h-dvh justify-between flex flex-col">
-            <Link href="https://push.joogps.com">
+            <Link href="https://pushr.joogps.com">
               <Image src={Logo} className="mx-8" alt="apple" height={30} />
             </Link>
 
@@ -54,7 +54,7 @@ export default function RootLayout({
 
               <div className="w-full text-nowrap bg-neutral-950 px-12 min-h-[96px] flex font-semibold items-center justify-between">
                 <div className="flex flex-col md:flex-row md:space-x-4">
-                  <Link href="https://push.joogps.com/privacy">
+                  <Link href="https://pushr.joogps.com/privacy">
                     {" "}
                     privacy policy{" "}
                   </Link>

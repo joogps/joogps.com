@@ -2,11 +2,11 @@ import Image from "next/image";
 import CapsuleButton from "@/components/Button/CapsuleButton";
 import Link from "next/link";
 
-import Logo9to5Mac from "../../../public/push/9to5Mac_logo.png";
-import Mockup from "../../../public/push/mockup.png";
-import QRCode from "../../../public/push/qr_code.png";
+import Logo9to5Mac from "../../../public/pushr/9to5Mac_logo.png";
+import Mockup from "../../../public/pushr/mockup.png";
+import QRCode from "../../../public/pushr/qr_code.png";
 
-export default function PushPage() {
+export default function PushrPage() {
   return (
     <div className="flex md:flex-row flex-col md:h-full w-full md:space-y-0 justify-between items-center md:items-start">
       <div className="items-start space-y-6 w-full pl-16 pr-16 md:pr-0 py-12 md:w-1/2 flex flex-col">

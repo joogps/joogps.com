@@ -35,8 +35,8 @@ export default function Home() {
       <p>
         over the years i've launched successful projects such as{" "}
         <span className="opacity-85">
-          <ArrowLink href="https://push.joogps.com" className="expanded-font">
-            push
+          <ArrowLink href="https://pushr.joogps.com" className="expanded-font">
+            pushr
           </ArrowLink>
           , a smart push-up tracking and social workout app
         </span>

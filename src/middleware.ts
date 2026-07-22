@@ -26,7 +26,7 @@ export function middleware(req: NextRequest) {
     case subdomain?.startsWith("push"):
     case subdomain?.startsWith("pushr"):
       return NextResponse.rewrite(
-        new URL(`/push${req.nextUrl.pathname}`, req.url),
+        new URL(`/pushr${req.nextUrl.pathname}`, req.url),
       );
     case subdomain?.startsWith("magic"):
       return NextResponse.rewrite(

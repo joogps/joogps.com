@@ -3,8 +3,8 @@
     "alias": "joogps.com",
     "routes": [
         {
-        "src": "/push/(.*)",
-        "dest": "/push/$1"
+        "src": "/pushr/(.*)",
+        "dest": "/pushr/$1"
         }
     ]
 }
